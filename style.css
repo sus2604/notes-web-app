@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 1000px;
+    padding: 10px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 35px;
+}
+
+.addNote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    border: 5px solid white;
+    padding: 20px; 
+}
+
+.addBtn {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    appearance: none;
+    border: 2px white dashed;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s; 
+    opacity: 0.7;
+}
+
+.addBtn:active {
+    opacity: 1.0;
+}
+
+.head {
+    color: white;
+} 
+
+.note {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    border: 5px solid white;
+    padding: 20px;
+    background: white;
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #b2bec3;
+    gap: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+.save, .trash {
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.write {
+    height: 100%;
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    font-size: medium;
+}
+
+
+@media screen and (max-width: 990px) {
+    .wrapper {
+        justify-content: center;
+    }
+}
